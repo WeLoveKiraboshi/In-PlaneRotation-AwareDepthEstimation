@@ -1,0 +1,58 @@
+/home/yukisaito/clion-2020.3.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master
+-- Using flag -std=c++11.
+Using python:  3.6 
+Using PYTHON_LIBRARIES:  /home/yukisaito/anaconda3/envs/py36/lib/libpython3.6m.so 
+Using PYTHON_INCLUDE_DIRS:  /home/yukisaito/anaconda3/envs/py36/include/python3.6m 
+-- Configuring done
+CMake Warning at CMakeLists.txt:111 (add_executable):
+  Cannot generate a safe runtime search path for target rgbd_monodepth
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libGLU.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/yukisaito/anaconda3/envs/py36/lib
+    runtime library [libSM.so.6] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/yukisaito/anaconda3/envs/py36/lib
+    runtime library [libICE.so.6] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/yukisaito/anaconda3/envs/py36/lib
+    runtime library [libX11.so.6] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/yukisaito/anaconda3/envs/py36/lib
+    runtime library [libXext.so.6] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/yukisaito/anaconda3/envs/py36/lib
+    runtime library [libpng16.so.16] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/yukisaito/anaconda3/envs/py36/lib
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/yukisaito/anaconda3/envs/py36/lib
+    runtime library [libtiff.so.5] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/yukisaito/anaconda3/envs/py36/lib
+
+  Some of these libraries may not be found correctly.
+
+
+CMake Warning at CMakeLists.txt:114 (add_executable):
+  Cannot generate a safe runtime search path for target webcam_monodepth
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libGLU.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/yukisaito/anaconda3/envs/py36/lib
+    runtime library [libSM.so.6] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/yukisaito/anaconda3/envs/py36/lib
+    runtime library [libICE.so.6] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/yukisaito/anaconda3/envs/py36/lib
+    runtime library [libX11.so.6] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/yukisaito/anaconda3/envs/py36/lib
+    runtime library [libXext.so.6] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/yukisaito/anaconda3/envs/py36/lib
+    runtime library [libpng16.so.16] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/yukisaito/anaconda3/envs/py36/lib
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/yukisaito/anaconda3/envs/py36/lib
+    runtime library [libtiff.so.5] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/yukisaito/anaconda3/envs/py36/lib
+
+  Some of these libraries may not be found correctly.
+
+
+-- Generating done
+-- Build files have been written to: /home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug

@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CNN_MonoFusion"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\opencv-3.4.9\;CMake Files\..\..\opencv-3.4.9\build\;CMake Files\..\Pangolin\;CMake Files\..\Pangolin\build\;CMake Files\..\Pangolin\build\src\;CMake Files\cmake_modules\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CNN_MonoFusion">
+				<Option output="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/libCNN_MonoFusion.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add directory="/home/yukisaito/anaconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/dense_map"/>
+					<Add directory="/home/yukisaito/anaconda3/envs/py36/include/python3.6m"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/build"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/include/opencv"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/core/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/flann/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/imgproc/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/ml/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/phase_unwrapping/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/photo/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/plot/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/reg/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/surface_matching/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/video/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/xphoto/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/dnn/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/features2d/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/freetype/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/fuzzy/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/hfs/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/img_hash/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/imgcodecs/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/line_descriptor/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/saliency/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/shape/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/text/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/videoio/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/calib3d/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/datasets/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/highgui/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/objdetect/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/rgbd/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/stereo/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/structured_light/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/superres/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/tracking/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/ts/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/videostab/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/xfeatures2d/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/ximgproc/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/xobjdetect/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/aruco/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/bgsegm/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/bioinspired/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/ccalib/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/dnn_objdetect/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/dpm/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/face/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/optflow/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/stitching/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/Pangolin/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/Pangolin/build/src/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 CNN_MonoFusion"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CNN_MonoFusion/fast">
+				<Option output="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/libCNN_MonoFusion.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add directory="/home/yukisaito/anaconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/dense_map"/>
+					<Add directory="/home/yukisaito/anaconda3/envs/py36/include/python3.6m"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/build"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/include/opencv"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/core/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/flann/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/imgproc/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/ml/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/phase_unwrapping/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/photo/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/plot/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/reg/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/surface_matching/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/video/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/xphoto/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/dnn/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/features2d/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/freetype/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/fuzzy/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/hfs/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/img_hash/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/imgcodecs/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/line_descriptor/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/saliency/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/shape/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/text/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/videoio/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/calib3d/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/datasets/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/highgui/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/objdetect/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/rgbd/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/stereo/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/structured_light/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/superres/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/tracking/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/ts/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/videostab/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/xfeatures2d/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/ximgproc/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/xobjdetect/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/aruco/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/bgsegm/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/bioinspired/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/ccalib/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/dnn_objdetect/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/dpm/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/face/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/optflow/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/stitching/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/Pangolin/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/Pangolin/build/src/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 CNN_MonoFusion/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rgbd_monodepth">
+				<Option output="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/Examples/rgbd_monodepth/rgbd_monodepth" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/Examples/rgbd_monodepth"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add directory="/home/yukisaito/anaconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/dense_map"/>
+					<Add directory="/home/yukisaito/anaconda3/envs/py36/include/python3.6m"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/build"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/include/opencv"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/core/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/flann/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/imgproc/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/ml/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/phase_unwrapping/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/photo/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/plot/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/reg/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/surface_matching/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/video/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/xphoto/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/dnn/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/features2d/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/freetype/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/fuzzy/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/hfs/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/img_hash/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/imgcodecs/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/line_descriptor/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/saliency/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/shape/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/text/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/videoio/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/calib3d/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/datasets/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/highgui/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/objdetect/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/rgbd/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/stereo/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/structured_light/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/superres/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/tracking/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/ts/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/videostab/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/xfeatures2d/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/ximgproc/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/xobjdetect/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/aruco/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/bgsegm/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/bioinspired/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/ccalib/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/dnn_objdetect/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/dpm/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/face/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/optflow/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/stitching/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/Pangolin/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/Pangolin/build/src/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 rgbd_monodepth"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rgbd_monodepth/fast">
+				<Option output="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/Examples/rgbd_monodepth/rgbd_monodepth" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/Examples/rgbd_monodepth"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add directory="/home/yukisaito/anaconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/dense_map"/>
+					<Add directory="/home/yukisaito/anaconda3/envs/py36/include/python3.6m"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/build"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/include/opencv"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/core/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/flann/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/imgproc/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/ml/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/phase_unwrapping/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/photo/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/plot/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/reg/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/surface_matching/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/video/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/xphoto/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/dnn/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/features2d/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/freetype/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/fuzzy/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/hfs/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/img_hash/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/imgcodecs/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/line_descriptor/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/saliency/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/shape/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/text/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/videoio/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/calib3d/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/datasets/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/highgui/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/objdetect/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/rgbd/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/stereo/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/structured_light/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/superres/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/tracking/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/ts/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/videostab/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/xfeatures2d/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/ximgproc/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/xobjdetect/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/aruco/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/bgsegm/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/bioinspired/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/ccalib/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/dnn_objdetect/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/dpm/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/face/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/optflow/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/stitching/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/Pangolin/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/Pangolin/build/src/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 rgbd_monodepth/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="webcam_monodepth">
+				<Option output="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/Examples/rgbd_monodepth/webcam_monodepth" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/Examples/rgbd_monodepth"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add directory="/home/yukisaito/anaconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/dense_map"/>
+					<Add directory="/home/yukisaito/anaconda3/envs/py36/include/python3.6m"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/build"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/include/opencv"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/core/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/flann/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/imgproc/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/ml/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/phase_unwrapping/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/photo/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/plot/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/reg/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/surface_matching/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/video/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/xphoto/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/dnn/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/features2d/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/freetype/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/fuzzy/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/hfs/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/img_hash/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/imgcodecs/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/line_descriptor/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/saliency/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/shape/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/text/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/videoio/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/calib3d/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/datasets/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/highgui/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/objdetect/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/rgbd/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/stereo/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/structured_light/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/superres/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/tracking/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/ts/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/videostab/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/xfeatures2d/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/ximgproc/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/xobjdetect/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/aruco/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/bgsegm/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/bioinspired/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/ccalib/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/dnn_objdetect/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/dpm/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/face/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/optflow/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/stitching/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/Pangolin/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/Pangolin/build/src/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 webcam_monodepth"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="webcam_monodepth/fast">
+				<Option output="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/Examples/rgbd_monodepth/webcam_monodepth" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/Examples/rgbd_monodepth"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add directory="/home/yukisaito/anaconda3/envs/py36/lib/python3.6/site-packages/numpy/core/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/dense_map"/>
+					<Add directory="/home/yukisaito/anaconda3/envs/py36/include/python3.6m"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/build"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/include/opencv"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/core/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/flann/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/imgproc/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/ml/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/phase_unwrapping/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/photo/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/plot/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/reg/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/surface_matching/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/video/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/xphoto/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/dnn/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/features2d/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/freetype/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/fuzzy/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/hfs/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/img_hash/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/imgcodecs/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/line_descriptor/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/saliency/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/shape/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/text/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/videoio/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/calib3d/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/datasets/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/highgui/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/objdetect/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/rgbd/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/stereo/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/structured_light/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/superres/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/tracking/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/ts/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/videostab/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/xfeatures2d/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/ximgproc/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/xobjdetect/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/aruco/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/bgsegm/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/bioinspired/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/ccalib/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/dnn_objdetect/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/dpm/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/face/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv_contrib-3.4.9/modules/optflow/include"/>
+					<Add directory="/home/yukisaito/opencv-3.4.9/opencv-3.4.9/modules/stitching/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/Pangolin/include"/>
+					<Add directory="/home/yukisaito/ORB-SLAM2_proposed/Pangolin/build/src/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 webcam_monodepth/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/Examples/rgbd_monodepth/rgbd_monodepth.cc">
+			<Option target="rgbd_monodepth"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/Examples/rgbd_monodepth/rgbd_monodepth.h">
+			<Option target="rgbd_monodepth"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/Examples/rgbd_monodepth/webcam.cc">
+			<Option target="webcam_monodepth"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/Converter.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/DepthEstimation.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/Frame.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/FrameDrawer.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/Initializer.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/KeyFrame.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/KeyFrameDatabase.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/LocalMapping.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/LoopClosing.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/Map.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/MapDrawer.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/MapPoint.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/ORBextractor.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/ORBmatcher.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/Optimizer.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/PnPsolver.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/Sim3Solver.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/System.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/Tracking.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/Viewer.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/dense_map/DenseMap.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/dense_map/DenseMap.h">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/dense_map/DenseMapDrawer.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/dense_map/DenseMapDrawer.h">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/dense_map/DenseMapViewer.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/dense_map/DenseMapViewer.h">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/dense_map/DepthPredictor.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/dense_map/DepthPredictor.h">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/dense_map/KeyFrameQueue.cc">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/src/dense_map/KeyFrameQueue.h">
+			<Option target="CNN_MonoFusion"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/../../opencv-3.4.9/build/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\opencv-3.4.9\build\"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/../../opencv-3.4.9/build/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\opencv-3.4.9\build\"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/../../opencv-3.4.9/build/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\opencv-3.4.9\build\"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/../Pangolin/build/src/PangolinConfig.cmake">
+			<Option virtualFolder="CMake Files\..\Pangolin\build\src\"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/../Pangolin/build/src/PangolinConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\Pangolin\build\src\"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/../Pangolin/build/src/PangolinTargets.cmake">
+			<Option virtualFolder="CMake Files\..\Pangolin\build\src\"/>
+		</Unit>
+		<Unit filename="/home/yukisaito/ORB-SLAM2_proposed/ORB_SLAM2-master/cmake_modules/FindEigen3.cmake">
+			<Option virtualFolder="CMake Files\cmake_modules\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
