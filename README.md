@@ -14,16 +14,18 @@ alt="ORB-SLAM2" width="698" height="178" border="50" /></a>
 
 ### Related Publications:
 
-[Our Paper1] Yuki Saito, Ryo Hachiuma, and Hideo Saito. **In-Plane Rotation-Aware Monocular Depth Estimation using SLAM**. *International Workshop on Frontiers of Computer Vision(IW-FCV 2020),* pp. 305-317, 2020. **[PDF](https://link.springer.com/chapter/10.1007%2F978-981-15-4818-5_23)**.
+[Our Paper1] Yuki Saito, Ryo Hachiuma, and Hideo Saito. **In-Plane Rotation-Aware Monocular Depth Estimation using SLAM**. *International Workshop on Frontiers of Computer Vision(IW-FCV 2020),* pp. 305-317, 2020. **[pdf](https://link.springer.com/chapter/10.1007%2F978-981-15-4818-5_23)**.
 
 [Our Paper2] Yuki Saito, Ryo Hachiuma, Masahiro Yamaguchi, and Hideo Saito,  **Training-free Approach to Improve the Accuracy of Monocular Depth Estimation with In-Plane Rotation**. *IEICE Transactions on Information and Systems*, 2021. **[pdf](https://search.ieice.org/bin/index.php?category=D&lang=J&curr=1)**
 
+[Our paper3] 齋藤祐貴，八馬遼，山口真弘，斎藤英雄，**SLAMを用いたRoll方向回転に頑健な単眼depth推定の精度改善手法**，第222回コンピュータビジョンとイメージメディア研究会，2020年5月15日発表済． [優秀賞] ** [pdf](http://www.hvrl.ics.keio.ac.jp/paper/pdf/unknown/cvim-222-IPSJSIGTechnical.pdf)**
 
-[ORB-SLAM2] Raúl Mur-Artal and Juan D. Tardós. **ORB-SLAM2: an Open-Source SLAM System for Monocular, Stereo and RGB-D Cameras**. *IEEE Transactions on Robotics,* vol. 33, no. 5, pp. 1255-1262, 2017. **[PDF](https://128.84.21.199/pdf/1610.06475.pdf)**.
 
-[Dense Depth] Ibraheem Alhashim and Peter Wonka. **High Quality Monocular Depth Estimation via Transfer Learning**. *ArXiv pe-prints abs/1812.11941,* 2018. **[PDF](https://arxiv.org/pdf/1812.11941.pdf)**
+[comment]: <> ([ORB-SLAM2] Raúl Mur-Artal and Juan D. Tardós. **ORB-SLAM2: an Open-Source SLAM System for Monocular, Stereo and RGB-D Cameras**. *IEEE Transactions on Robotics,* vol. 33, no. 5, pp. 1255-1262, 2017. **[pdf]&#40;https://128.84.21.199/pdf/1610.06475.pdf&#41;**.)
 
-[CNN-MonoFusion] Wang, Jiafang and Liu, Haiwei and Cong, Lin and Xiahou, Zuoxin and Wang, Liming. **CNN-MonoFusion: Online Monocular Dense Reconstruction Using Learned Depth from Single View**, ISMAR, pp.57--62, 2018, **[pdf](https://ieeexplore.ieee.org/document/8699273)**
+[comment]: <> ([Dense Depth] Ibraheem Alhashim and Peter Wonka. **High Quality Monocular Depth Estimation via Transfer Learning**. *ArXiv pe-prints abs/1812.11941,* 2018. **[pdf]&#40;https://arxiv.org/pdf/1812.11941.pdf&#41;**)
+
+[comment]: <> ([CNN-MonoFusion] Wang, Jiafang and Liu, Haiwei and Cong, Lin and Xiahou, Zuoxin and Wang, Liming. **CNN-MonoFusion: Online Monocular Dense Reconstruction Using Learned Depth from Single View**, ISMAR, pp.57--62, 2018, **[pdf]&#40;https://ieeexplore.ieee.org/document/8699273&#41;**)
 # 1. License
 
 If you use our scripts  in an academic work, please cite:
